@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { comments, CommentType } from './data/comments';
+
 
 function App() {
   return (
@@ -13,8 +15,8 @@ function App() {
 
           {/* image and name */}
           <div className="flex space-x-2 items-center">
-            <img className="w-12 h-12 rounded-full" src="/profileImages/handsome.jpg"></img>
-            <span className='font-semibold text-lg text-white'>Chayanin Suatap 610631100</span>
+            <img className="w-12 h-12 rounded-full" src="/profileImages/JS-5.jpg"></img>
+            <span className='font-semibold text-lg text-white'>Nuttawan Reabreang 630612099</span>
           </div>
 
           {/* status message */}
@@ -29,14 +31,14 @@ function App() {
         </div>
 
         {/* comments section */}
-        <div className="">
+        <div className="comments">
 
           {/* normal comment */}
           <div className="flex p-2 items-start space-x-2">
-            <img className="w-10 w-10 rounded-full" src="/profileImages/lisa.jpg"></img>
+            <img className="w-10 w-10 rounded-full" >{comments.userImagePath}</img>
             <div className="bg-gray-500 rounded-lg p-2">
-              <p className="font-semibold text-white">Lisa</p>
-              <p className='text-white'>ตัวอย่าง Template จ้า</p>
+              <p className="font-semibold text-white"></p>
+              <p className='text-white'></p>
               {/* like section (จะไม่แสดงถ้าไม่มีใครไลค์เลย) */}
               <div className='flex items-center'>
                 <img className='w-4 h-4 mr-1' src='/like.svg'></img>
